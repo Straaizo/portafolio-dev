@@ -1,39 +1,34 @@
 const proyectos = [
-    {
-        titulo: "SkateShop",
-        descripcion: "E-Commerce con carrito de compras funcional.",
-        tecnologias: ["Django", "SQL", "Python"],
-        link: "https://github.com/Straaizo/SkateShop",
-        imagen: "ruta/tu-imagen1.jpg" // Agrega aquí la ruta
-    },
-    {
-        titulo: "Reservas de espacios",
-        descripcion: "Proyecto para DuocUC.",
-        tecnologias: ["React", "NestJS", "Vite", "MongoDB"],
-        link: "https://github.com/Shigaxz/Capstone-Project",
-        imagen: "ruta/tu-imagen2.jpg"
-    },
-    {
-        titulo: "Dashboard Admin",
-        descripcion: "Panel de control visual con gráficas y estadísticas.",
-        tecnologias: ["Tailwind", "JS"],
-        link: "#",
-        imagen: "ruta/tu-imagen3.jpg"
-    }
+  {
+    titulo: "SkateShop",
+    descripcion: "E-Commerce con carrito de compras funcional.",
+    tecnologias: ["Django", "SQL", "Python"],
+    link: "https://github.com/Straaizo/SkateShop",
+    imagenes: [
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/main/assets/images/Reservasymemorias.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/main/assets/images/Reservasymemorias.jpeg"
+    ]
+  },
+  {
+    titulo: "Reservas de espacios",
+    descripcion: "Proyecto para DuocUC.",
+    tecnologias: ["React", "NestJS", "Vite", "MongoDB"],
+    link: "https://github.com/Shigaxz/Capstone-Project",
+    imagenes: [
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservasymemorias.jpeg?token=GHSAT0AAAAAADNNUSXU72OS46KOJBAJTRP22KRNETA"
+    ]
+  }
 ];
 
 const contenedor = document.getElementById('grid-proyectos');
 
-proyectos.forEach(p => {
+proyectos.forEach((p, i) => {
     const card = `
         <div class="group bg-slate-900/40 backdrop-blur-md border border-slate-700/50 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2 transition-all duration-300">
             
             <div class="w-full h-48 overflow-hidden border-b border-slate-700/50">
-                <img src="${p.imagen}" alt="${p.titulo}" 
-                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                     onerror="this.src='https://via.placeholder.com/400x225/0f172a/3b82f6?text=Proyecto'">
+                <img src="${p.imagenes[0]}"  alt="${p.titulo}" data-index="${i}" class="cursor-pointer w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
             </div>
-
             <div class="p-6">
                 <div class="flex flex-wrap gap-2 mb-4">
                     ${p.tecnologias.map(t => `<span class="text-[10px] uppercase tracking-wider font-bold text-blue-400 bg-blue-900/30 px-2 py-1 rounded">${t}</span>`).join('')}
@@ -99,3 +94,48 @@ style.innerHTML = `
     #typing-name { animation: blink 0.7s step-end infinite; }
 `;
 document.head.appendChild(style);
+
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const closeModal = document.getElementById("closeModal");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+let currentProject = 0;
+let currentImage = 0;
+
+// abrir modal
+document.addEventListener("click", e => {
+  if (e.target.tagName === "IMG" && e.target.dataset.index) {
+    currentProject = e.target.dataset.index;
+    currentImage = 0;
+    modalImg.src = proyectos[currentProject].imagenes[currentImage];
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+  }
+});
+
+// cerrar
+closeModal.onclick = () => {
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+};
+
+// navegación
+next.onclick = () => {
+  const imgs = proyectos[currentProject].imagenes;
+  currentImage = (currentImage + 1) % imgs.length;
+  modalImg.src = imgs[currentImage];
+};
+
+prev.onclick = () => {
+  const imgs = proyectos[currentProject].imagenes;
+  currentImage = (currentImage - 1 + imgs.length) % imgs.length;
+  modalImg.src = imgs[currentImage];
+};
+
+
+
+
+console.log(proyectos);
+console.log(contenedor);
