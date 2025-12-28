@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body class="bg-[#020617] text-slate-100 overflow-x-hidden">
+
+
+
+    <nav class=" w-full z-50 bg-[#020617] backdrop-blur-md border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-end items-center">
+            <div class="space-x-8 font-medium">
+                <a href="#proyectos" class="hover:text-blue-600 transition">Proyectos</a>
+                <a href="#habilidades" class="hover:text-blue-600 transition">Habilidades</a>
+                <a href="#contacto" class="hover:text-blue-600 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+<header class="relative pt-40 pb-24 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-6 text-white">
+            Hola soy <span id="typing-name" class="text-blue-500 border-r-4 border-blue-500"></span>
+        </h1>
+        <p class="text-2xl md:text-3xl font-bold text-slate-300 mb-4">
+            Egresado de Ingeniería en Informática
+        </p>
+        <p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
+            Desarrollador apasionado por construir aplicaciones web modernas, rápidas y accesibles.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#proyectos" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">Ver Proyectos</a>
+            <a href="#contacto" class="border border-slate-700 text-slate-300 px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition">Contactar</a>
+        </div>
+    </div>
+</header>
+
+    <section id="proyectos" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Proyectos Destacados</h2>
+            <div id="grid-proyectos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">Tecnologías</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">HTML5</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">CSS3</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">JavaScript</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">Tailwind CSS</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">GitHub</span>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
