@@ -29,12 +29,8 @@ const proyectos = [
     tecnologias: ["Colab / Python", "FastAPi"],
     link: "https://github.com/Shigaxz/Capstone-Project",
     imagenes: [
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Reservasymemorias.jpeg",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/ReservasPrincipal.jpeg",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Memorias.jpeg",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Reserva.jpeg",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Reserva%20Aprobada.jpeg",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Admin.jpeg"
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/RiesgoCrediticio/Crediticio1.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/RiesgoCrediticio/Crediticio2.jpeg"
     ]
   }
 ];
@@ -46,7 +42,8 @@ proyectos.forEach((p, i) => {
         <div class="group bg-slate-900/40 backdrop-blur-md border border-slate-700/50 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2 transition-all duration-300">
             
             <div class="w-full h-48 overflow-hidden border-b border-slate-700/50">
-                <img src="${p.imagenes[0]}"  alt="${p.titulo}" data-index="${i}" class="cursor-pointer w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="${p.imagenes[0]}"  alt="${p.titulo}" data-index="${i}" class="cursor-pointer w-full h-full object-cover
+                 object-center group-hover:scale-110 transition-transform duration-500">
             </div>
             <div class="p-6">
                 <div class="flex flex-wrap gap-2 mb-4">
