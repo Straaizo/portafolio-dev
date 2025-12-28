@@ -15,7 +15,26 @@ const proyectos = [
     tecnologias: ["React", "NestJS", "Vite", "MongoDB"],
     link: "https://github.com/Shigaxz/Capstone-Project",
     imagenes: [
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservasymemorias.jpeg?token=GHSAT0AAAAAADNNUSXU72OS46KOJBAJTRP22KRNETA"
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Reservasymemorias.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/ReservasPrincipal.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Memorias.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Reserva.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Reserva%20Aprobada.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Admin.jpeg"
+    ]
+  },
+  {
+    titulo: "Riesgo Crediticio",
+    descripcion: "Proyecto Machine Learning / POST ",
+    tecnologias: ["Colab / Python", "FastAPi"],
+    link: "https://github.com/Shigaxz/Capstone-Project",
+    imagenes: [
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Reservasymemorias.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/ReservasPrincipal.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Memorias.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Reserva.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Reserva%20Aprobada.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Reservas/Admin.jpeg"
     ]
   }
 ];
@@ -50,7 +69,7 @@ proyectos.forEach((p, i) => {
     `;
     contenedor.innerHTML += card;
 });
-const nameToType = "Enzo Sabattini";
+const nameToType =" Enzo Sabattini";
 const typingElement = document.getElementById("typing-name");
 let index = 0;
 let isDeleting = false;
@@ -79,7 +98,7 @@ function typeEffect() {
         }
     }
 
-    // Velocidad: más lento al escribir, más rápido al borrar
+    // Velocidad al escribir y borrar.
     const speed = isDeleting ? 100 : 200;
     setTimeout(typeEffect, speed);
 }
@@ -91,9 +110,13 @@ window.addEventListener('load', typeEffect);
 const style = document.createElement('style');
 style.innerHTML = `
     @keyframes blink { 50% { border-color: transparent; } }
-    #typing-name { animation: blink 0.7s step-end infinite; }
+    #typing-name { animation: blink 1s step-end infinite; }
 `;
 document.head.appendChild(style);
+
+
+
+// Carousel imagenes para proyectos.
 
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modalImg");
