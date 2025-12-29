@@ -5,8 +5,11 @@ const proyectos = [
     tecnologias: ["Django", "SQL", "Python"],
     link: "https://github.com/Straaizo/SkateShop",
     imagenes: [
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/main/assets/images/Reservasymemorias.jpeg",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/main/assets/images/Reservasymemorias.jpeg"
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Skateshop/Inicio.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Skateshop/Inicio%20-%20Sidemenu.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Skateshop/Inicio%20Sesion.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Skateshop/Trucks.jpeg",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/Skateshop/Carrito.jpeg"
     ]
   },
   {
