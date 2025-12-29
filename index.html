@@ -6,6 +6,7 @@
     <title>Mi Portafolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
  
 </head>
 <body class="bg-[#020617] text-slate-100 overflow-x-hidden">
@@ -39,16 +40,7 @@
         </div>
     </div>
 </header>
-    <div id="modal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
-    <button id="closeModal" class="absolute top-6 right-6 text-white text-3xl">&times;</button>
-
-    <button id="prev" class="absolute left-6 text-white text-3xl">&#10094;</button>
-    <button id="next" class="absolute right-6 text-white text-3xl">&#10095;</button>
-
-    <img id="modalImg" class="max-w-[90%] max-h-[80%] rounded-xl shadow-2xl" />
-    </div>
-
-
+  
     <section id="proyectos" class="py-20 px-6">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold mb-6 text-center">Proyectos Destacados</h2>
@@ -59,6 +51,15 @@
                 </div>
         </div>
     </section>
+
+    <div id="modal" class="modal-carousel fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+    <button id="closeModal" class="absolute top-6 right-6 text-white text-3xl">&times;</button>
+
+    <button id="prev" class="absolute left-6 text-white text-3xl">&#10094;</button>
+    <button id="next" class="absolute right-6 text-white text-3xl ">&#10095;</button>
+
+    <img id="modalImg" class="max-w-[90%] max-h-[80%] rounded-xl shadow-2xl" />
+    </div>
 
     <section id="habilidades" class="py-20 px-6">
         <div class="max-w-4xl mx-auto text-center">
