@@ -38,10 +38,16 @@ const proyectos = [
   },
   {
     titulo: "Bendito Market",
-    descripcion: "Proyecto con appsheet",
+    descripcion: "Proyecto para minimarket.",
     tecnologias: ["Appsheet","mySQL","SQL workbench"],
     link: "",
     imagenes: [
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/inicio.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/ventas_realizadas.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/realizar%20venta.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/productos.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/ingresar%20stock.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/agregar%20categoria.png"
     ]
   }
 ];
