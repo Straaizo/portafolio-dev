@@ -35,6 +35,14 @@ const proyectos = [
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/RiesgoCrediticio/Crediticio1.jpeg",
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/RiesgoCrediticio/Crediticio2.jpeg"
     ]
+  },
+  {
+    titulo: "Bendito Market",
+    descripcion: "Proyecto con appsheet",
+    tecnologias: ["Appsheet","mySQL","SQL workbench"],
+    link: "",
+    imagenes: [
+    ]
   }
 ];
 
