@@ -49,6 +49,34 @@ const proyectos = [
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/ingresar%20stock.png",
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/agregar%20categoria.png"
     ]
+  },
+  {
+    titulo: "Inventario LH",
+    descripcion: "Inventario de insumos en la Hornilla",
+    tecnologias: ["Python","JWT","FAST API", "Flutter","Dart"],
+    link: "",
+    imagenes: [
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/inicio.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/ventas_realizadas.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/realizar%20venta.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/productos.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/ingresar%20stock.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/agregar%20categoria.png"
+    ]
+  },
+    {
+    titulo: "API La Hornilla",
+    descripcion: "API REST para aplicaciones relacionadas con La Hornilla.",
+    tecnologias: ["Python","JWT","FAST API", "SWAGGER UI"],
+    link: "",
+    imagenes: [
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/inicio.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/ventas_realizadas.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/realizar%20venta.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/productos.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/ingresar%20stock.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/BenditoMarket/agregar%20categoria.png"
+    ]
   }
 ];
 
