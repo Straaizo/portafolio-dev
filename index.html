@@ -3,190 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enzo Sabattini</title>
+    <title>Enzo Sabattini — Dev</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/ES_logo_dark.svg">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
- 
 </head>
 <body class="bg-[#020617] text-slate-100 overflow-x-hidden">
 
-
-   
-    <nav class=" w-full z-50 bg-[#020617] backdrop-blur-md border-slate-200">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-end items-center">
-            <div class="space-x-8 font-medium">
-                <a href="#proyectos" class="hover:text-blue-600 transition">Proyectos</a>
-                <a href="#trayectoria" class="hover:text-blue-600 transition">Trayectoria</a>
-                <a href="#contacto" class="hover:text-blue-600 transition">Contacto</a>
+    <!-- NAV -->
+    <nav id="navbar" class="fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-end items-end">
+            <!-- Links desktop -->
+            <div class="hidden md:flex space-x-8 font-medium text-slate-300">
+                <a href="#proyectos"   class="nav-link hover:text-white transition">Proyectos</a>
+                <a href="#habilidades" class="nav-link hover:text-white transition">Tecnologías</a>
+                <a href="#trayectoria" class="nav-link hover:text-white transition">Trayectoria</a>
+                <a href="#contacto"    class="nav-link hover:text-white transition">Contacto</a>
+            </div>
+            <!-- Hamburger (mobile) -->
+            <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menú">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        <!-- Menú mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#020617]/95 backdrop-blur-md border-t border-slate-800">
+            <div class="flex flex-col px-6 py-5 space-y-5 font-medium text-slate-300">
+                <a href="#proyectos"   class="nav-link mobile-nav-link hover:text-white transition">Proyectos</a>
+                <a href="#habilidades" class="nav-link mobile-nav-link hover:text-white transition">Tecnologías</a>
+                <a href="#trayectoria" class="nav-link mobile-nav-link hover:text-white transition">Trayectoria</a>
+                <a href="#contacto"    class="nav-link mobile-nav-link hover:text-white transition">Contacto</a>
             </div>
         </div>
     </nav>
 
-<header class="relative pt-40 pb-24 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-3xl sm:text-4xl md:text-6xl font-black tracking-tighter mb-6 text-white whitespace-nowrap">
-            Hola soy <span id="typing-name" class="inline-block text-blue-500 border-r-4 border-blue-500 ml-2"></span>
-        </h1>
-        <p class="text-2xl md:text-3xl font-bold text-slate-300 mb-4">
-            Ingeniero en informatica / Desarrollador de Software
-        </p>
-        <p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
-         Apasionado por construir aplicaciones  modernas, rápidas y accesibles.
-        </p>
-        <div class="flex justify-center gap-4">
-            <a href="#proyectos" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">Ver Proyectos</a>
-            <a href="#contacto" class="border border-slate-700 text-slate-300 px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition">Contactar</a>
+    <!-- HERO -->
+    <header class="relative min-h-screen flex items-center justify-center px-6 pt-20 pb-28">
+        <div class="hero-bg-gradient"></div>
+        <div class="w-full max-w-3xl mx-auto text-center reveal">
+            <h1 id="hero-title" class="font-black tracking-tighter mb-5 text-white leading-tight whitespace-nowrap">
+                Hola, soy <span id="typing-name" class="text-blue-500 border-r-4 border-blue-500 ml-2 pr-1"></span>
+            </h1>
+            <p class="text-lg md:text-xl font-semibold text-slate-300 mb-4">
+                Ingeniero en Informática · Desarrollador de Software
+            </p>
+            <p class="text-base text-slate-400 mb-10 max-w-xl mx-auto leading-relaxed">
+                Apasionado por construir aplicaciones modernas, rápidas y accesibles.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full" style="max-width:360px; margin-left:auto; margin-right:auto;">
+                <a href="#proyectos" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-500 transition shadow-lg shadow-blue-900/30 text-center">Ver Proyectos</a>
+                <a href="#contacto"  class="border border-slate-600 text-slate-300 px-8 py-3 rounded-full font-semibold hover:bg-slate-800 hover:border-slate-500 transition text-center">Contactar</a>
+            </div>
         </div>
-    </div>
-</header>
-  
+        <!-- Indicador de scroll -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 ">
+            <svg class="w-5 h-5 text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+        </div>
+    </header>
+
+    <!-- PROYECTOS -->
     <section id="proyectos" class="py-20 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 text-center">Proyectos Destacados</h2>
-            <p class="text-center text-gray-400 text-sl mb-8">
-             Cada proyecto incluye enlace al repositorio y junto con imágenes de referencia.
-            </p>
-            <div id="grid-proyectos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                </div>
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl font-bold mb-3">Proyectos Destacados</h2>
+                <p class="text-gray-400">Cada proyecto incluye enlace al repositorio e imágenes de referencia.</p>
+            </div>
+            <div id="grid-proyectos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
     </section>
 
-    <div id="modal" class="modal-carousel fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
-    <button id="closeModal" class="absolute top-6 right-6 text-white text-3xl">&times;</button>
-
-    <button id="prev" class="absolute left-6 text-white text-3xl">&#10094;</button>
-    <button id="next" class="absolute right-6 text-white text-3xl ">&#10095;</button>
-
-    <img id="modalImg" class="max-w-[90%] max-h-[80%] rounded-xl shadow-2xl" />
+    <!-- MODAL CAROUSEL -->
+    <div id="modal" class="modal-carousel fixed inset-0 bg-black/85 hidden items-center justify-center z-50 p-4">
+        <button id="closeModal" aria-label="Cerrar"
+            class="absolute top-4 right-4 text-white text-4xl leading-none hover:text-blue-400 transition w-10 h-10 flex items-center justify-center">
+            &times;
+        </button>
+        <button id="prev" aria-label="Anterior"
+            class="absolute left-3 sm:left-6 text-white text-3xl hover:text-blue-400 transition w-10 h-10 flex items-center justify-center">
+            &#10094;
+        </button>
+        <button id="next" aria-label="Siguiente"
+            class="absolute right-3 sm:right-6 text-white text-3xl hover:text-blue-400 transition w-10 h-10 flex items-center justify-center">
+            &#10095;
+        </button>
+        <img id="modalImg" class="max-w-full max-h-[82vh] rounded-xl shadow-2xl object-contain" alt="Vista del proyecto"/>
+        <div id="modal-counter" class="absolute bottom-4 left-1/2 -translate-x-1/2 text-slate-400 text-sm bg-black/50 px-3 py-1 rounded-full"></div>
     </div>
-    
-    
-    <section id="trayectoria" class="py-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-5">
-                Trayectoria
-            </h2>
-               <p class="text-center text-gray-400 text-sl mb-8">
-                Mi formacion academica y profesionalmente.
-            </p>
 
-   
-    <div class="relative mt-20">
-        <div class="absolute left-[-1px] top-3 h-[calc(100%-7.8rem)] w-[2px] bg-gray-600"></div>
-
-
-
-    
-      <div class="mb-10 ml-6 text-left">
-        <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full ring-8 ring-gray-900 timeline-dot"></span>
-        <h3 class="text-lg font-semibold ">Tecnico en telecomunciaciones.</h3>
-        <p class="text-sm text-gray-300 pt-2 ml-2">Liceo Eledioro Garcia Zegers</p>
-        <p class="text-sm text-gray-400 pt-2 ml-2">2016 - 2020</p>
-       
-      </div>
-
-
-      <div class="mb-10 ml-6 text-left">
-        <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full ring-8 ring-gray-900 timeline-dot "></span>
-        <h3 class="text-lg font-semibold ">Practica Telecomunicaciones.</h3>
-        <p class="text-sm text-gray-300 pt-2 ml-2">Entel</p>
-        <p class="text-sm text-gray-400 pt-2 ml-2">2022 MAR - 2022 JUN.</p> 
-        <p class="text-gray-300 pt-2 ml-2">
-          Soporte TI, tickets, resolucion de incidencias.
-        </p>
-      </div>
-
-
-      <div class="mb-10 ml-6 text-left">
-        <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full ring-8 ring-gray-900 timeline-dot m"></span>
-        <h3 class="text-lg font-semibold ">Ingeniero Informatica</h3>
-        <p class="text-sm text-gray-300 pt-2 ml-2">Duoc UC</p>
-        <p class="text-sm text-gray-400 pt-2 ml-2">2022 — 2025</p>
-       
-        <p class="text-gray-300 pt-2 ml-2">
-          
-        </p>
-      </div>
-           
-      <div class=" ml-6 text-left">
-        <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full ring-8 ring-gray-900 timeline-dot "></span>
-        <h3 class="text-lg font-semibold ">Soporte TI | Desarrollador Software</h3>
-        <p class="text-sm text-gray-300 pt-2 ml-2">LH Hornilla</p>
-        <p class="text-sm text-gray-400 pt-2 ml-2">2026 FEB - Actualidad </p> 
-        <p class="text-gray-300 pt-2 ml-2">
-          Tickets, desarrollo de aplicaciones.
-        </p>
-      </div>
-
-
-                
-
-        </div>
-    </div>
-    </section>
-
-        
-    </section>
-
-    <section id="habilidades" class="py-40 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-10">Tecnologías</h2>
-            <div class="flex flex-wrap justify-center gap-4">
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">HTML5</span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">CSS3</span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">JavaScript</span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">Python</span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">Django</span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">Java / Xampp </span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">React</span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">Angular</span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">GitHub / Git</span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">FastAPI</span>
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-medium">NestJS</span>
-
-                
+    <!-- TECNOLOGÍAS -->
+    <section id="habilidades" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <h2 class="text-3xl font-bold mb-3">Tecnologías</h2>
+            <p class="text-gray-400 mb-10">Las herramientas con las que trabajo día a día.</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">Java</span>
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Angular</span>
+                <span class="tech-badge">NestJS</span>
+                <span class="tech-badge">Flutter / Dart</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Git / GitHub</span>
             </div>
         </div>
     </section>
-    
-<section id="contacto" class="py-44  px-6">
-  <div class="max-w-4xl mx-auto text-center">
 
-    <h2 class="text-3xl font-bold mb-5">
-      Contacto
-    </h2>
+    <!-- TRAYECTORIA -->
+    <section id="trayectoria" class="py-20 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-14 reveal">
+                <h2 class="text-3xl font-bold mb-3">Trayectoria</h2>
+                <p class="text-gray-400">Mi formación académica y experiencia profesional.</p>
+            </div>
+            <div class="relative pl-8 border-l-2 border-slate-700/60 space-y-10">
 
-    <p class="text-gray-400 mb-10">
-      Puedes contactarme o revisar mi trabajo en las siguientes plataformas.
-    </p>
+                <div class="reveal timeline-item">
+                    <span class="timeline-dot"></span>
+                    <h3 class="text-lg font-semibold text-white">Técnico en Telecomunicaciones</h3>
+                    <p class="text-sm text-blue-400 font-medium mt-1">Liceo Eleodoro García Zegers</p>
+                    <p class="text-sm text-gray-500 mt-0.5">2016 – 2020</p>
+                </div>
 
-    <div class="grid md:grid-cols-3 gap-9">
-      <a 
-         class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:border-blue-500 transition contact-glow">
-        <p class="text-lg font-semibold">Correo</p>
-        <p class="text-gray-400 text-sm mt-2">sabattinienzo@gmail.com</p>
-      </a>
+                <div class="reveal timeline-item">
+                    <span class="timeline-dot"></span>
+                    <h3 class="text-lg font-semibold text-white">Práctica — Telecomunicaciones</h3>
+                    <p class="text-sm text-blue-400 font-medium mt-1">Entel</p>
+                    <p class="text-sm text-gray-500 mt-0.5">Mar 2022 – Jun 2022</p>
+                    <p class="text-slate-400 text-sm mt-2">Soporte TI, gestión de tickets y resolución de incidencias.</p>
+                </div>
 
+                <div class="reveal timeline-item">
+                    <span class="timeline-dot"></span>
+                    <h3 class="text-lg font-semibold text-white">Ingeniería en Informática</h3>
+                    <p class="text-sm text-blue-400 font-medium mt-1">Duoc UC</p>
+                    <p class="text-sm text-gray-500 mt-0.5">2022 – 2025</p>
+                </div>
 
-      <a href="https://www.linkedin.com/in/enzo-sabattini/"
-         class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:border-blue-500 transition contact-glow">
-        <p class="text-lg font-semibold">LinkedIn</p>
-        <p class="text-gray-400 text-sm mt-2">Enzo Sabattini</p>
-      </a>
+                <div class="reveal timeline-item">
+                    <span class="timeline-dot active"></span>
+                    <h3 class="text-lg font-semibold text-white">Soporte TI · Desarrollador de Software</h3>
+                    <p class="text-sm text-blue-400 font-medium mt-1">La Hornilla LH</p>
+                    <p class="text-sm text-gray-500 mt-0.5">Feb 2026 – Actualidad</p>
+                    <p class="text-slate-400 text-sm mt-2">Gestión de tickets y desarrollo de aplicaciones internas.</p>
+                </div>
 
-      <a href="https://github.com/straaizo"
+            </div>
+        </div>
+    </section>
 
-         class="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:border-blue-500 transition contact-glow">
-        <p class="text-lg font-semibold">GitHub</p>
-        <p class="text-gray-400 text-sm mt-2">github.com/straaizo</p>
-      </a>
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 px-6">
+        <div class="max-w-3xl mx-auto text-center reveal">
+            <h2 class="text-3xl font-bold mb-3">Contacto</h2>
+            <p class="text-gray-400 mb-10">¿Tienes un proyecto en mente? Hablemos.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
-    </div>
+                <a href="mailto:sabattinienzo@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <p class="text-base font-semibold mt-3">Correo</p>
+                    <p class="text-gray-400 text-sm mt-1 break-all">sabattinienzo@gmail.com</p>
+                </a>
 
-  </div>
-</section>
+                <a href="https://www.linkedin.com/in/enzo-sabattini/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <p class="text-base font-semibold mt-3">LinkedIn</p>
+                    <p class="text-gray-400 text-sm mt-1">Enzo Sabattini</p>
+                </a>
 
+                <a href="https://github.com/straaizo" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <p class="text-base font-semibold mt-3">GitHub</p>
+                    <p class="text-gray-400 text-sm mt-1">github.com/straaizo</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/60 py-8 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+            <span>© 2026 Enzo Sabattini</span>
+            <div class="flex gap-6">
+                <a href="mailto:sabattinienzo@gmail.com" class="hover:text-blue-400 transition">Correo</a>
+                <a href="https://www.linkedin.com/in/enzo-sabattini/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition">LinkedIn</a>
+                <a href="https://github.com/straaizo" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

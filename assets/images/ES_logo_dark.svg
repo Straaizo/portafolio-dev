@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <linearGradient id="sGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <style>
+      .es { font-family: 'Inter', 'Montserrat', 'SF Pro Display', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 580px; }
+    </style>
+  </defs>
+  <rect width="1000" height="1000" fill="#0A1020"/>
+  <!-- Perfect center guides (remove for production) -->
+  <!-- <circle cx="500" cy="520" r="3" fill="red" opacity="0.3"/> -->
+  
+  <g transform="translate(500, 520)">
+    <!-- Group is perfectly centered. Each letter positioned symmetrically -->
+    <text class="es" x="-165" y="0" text-anchor="middle" dominant-baseline="central" fill="#FFFFFF" letter-spacing="0">E</text>
+    <text class="es" x="165" y="0" text-anchor="middle" dominant-baseline="central" fill="url(#sGrad)" letter-spacing="0">S</text>
+  </g>
+</svg>
