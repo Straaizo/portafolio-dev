@@ -30,7 +30,7 @@ const proyectos = [
     titulo: "Riesgo Crediticio",
     descripcion: "Modelo de Machine Learning para predicción de riesgo crediticio, expuesto mediante una API REST.",
     tecnologias: ["Python", "Colab", "FastAPI"],
-    link: "",
+    link: "https://github.com/Straaizo/credit-risk-ml-api",
     imagenes: [
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/RiesgoCrediticio/Crediticio1.jpeg",
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/RiesgoCrediticio/Crediticio2.jpeg"
@@ -54,7 +54,7 @@ const proyectos = [
     titulo: "Inventario LH",
     descripcion: "App mobile en Flutter para gestión de inventario de insumos y equipos en La Hornilla.",
     tecnologias: ["Flutter", "Dart", "FastAPI", "Python", "JWT"],
-    link: "",
+    link: "https://github.com/Straaizo/LH-INVENTARIO",
     imagenes: [
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/LOGIN.png",
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/SALIDA.png",
@@ -73,7 +73,7 @@ const proyectos = [
     titulo: "API La Hornilla",
     descripcion: "API REST con autenticación JWT y documentación Swagger para todas las apps internas de La Hornilla.",
     tecnologias: ["FastAPI", "Python", "JWT", "Swagger UI"],
-    link: "",
+    link: "https://github.com/Straaizo/API-BASE-LH",
     imagenes: [
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/ApiLahornilla/InterfazSwaggerUI.png",
       "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/ApiLahornilla/CMDD.png"
