@@ -52,21 +52,11 @@ const proyectos = [
   },
   {
     titulo: "Inventario LH",
-    descripcion: "App mobile en Flutter para gestión de inventario de insumos y equipos en La Hornilla.",
-    tecnologias: ["Flutter", "Dart", "FastAPI", "Python", "JWT"],
+    descripcion: "Aplicacion unificada de inventarios para La Hornilla",
+    tecnologias: ["React", "Google Cloud Run","Firebase","JWT"],
     link: "https://github.com/Straaizo/LH-INVENTARIO",
     imagenes: [
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/LOGIN.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/SALIDA.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/ENTRADA.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/INVENTARIO.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/PRODUCTOS.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/EQUIPOS.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/CELULARES.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/TABLETS.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/IMPRESORAS.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/DETALLE%20EQUIPO.png",
-      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/SWAGGER%20UI%20API.png"
+      
     ]
   },
   {
