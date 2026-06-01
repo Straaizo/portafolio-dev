@@ -56,7 +56,18 @@ const proyectos = [
     tecnologias: ["React", "Google Cloud Run","Firebase","JWT"],
     link: "https://github.com/Straaizo/LH-INVENTARIO",
     imagenes: [
-      
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/Inventario-login.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/Inicio.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/Analisis.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/SALIDA.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/ENTRADA.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/INVENTARIO.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/PRODUCTOS.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/EQUIPOS.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/CELULARES.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/TABLETS.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/IMPRESORAS.png",
+      "https://raw.githubusercontent.com/Straaizo/portafolio-dev/refs/heads/master/assets/images/InventarioLH/detalle-equipo.png"
     ]
   },
   {
